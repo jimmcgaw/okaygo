@@ -37,4 +37,8 @@ func main() {
     delete(myAgeMap, "Casper")
     fmt.Println(myAgeMap)
     
+    // if we're going to create a huge map, declare its capacity upfront
+    myHugeMap := make(map[string]int, 600)
+    fmt.Printf("Capacity of 'myHugeMap' is: %d", len(myHugeMap)) // can we check size?
+    
 }
