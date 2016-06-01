@@ -30,4 +30,11 @@ func main() {
     for key,value := range myAgeMap {
         fmt.Printf("%s tiene %d años.\n", key, value)
     }
+    
+    myAgeMap["Casper"] = 66
+    
+    fmt.Println(myAgeMap)
+    delete(myAgeMap, "Casper")
+    fmt.Println(myAgeMap)
+    
 }
