@@ -13,4 +13,8 @@ func main() {
     for _, env := range os.Environ() {
         fmt.Println(env)
     }
+    
+    username := os.Getenv("USER")
+    
+    fmt.Println("Name of current system user:", username)
 }
